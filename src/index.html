@@ -13,9 +13,16 @@
 </head>
 
 <body>
-  <form class="search-form" id="search-form">
+  <form class="search-form js-form" id="search-form">
+    <label for="exampleDataList" class="form-label">⏎</label>
     <input class="form-control" type="text" name="query" autocomplete="off" placeholder="Type to search images..." />
   </form>
+
+  <ul class="gallery js-gallery"></ul>
+
+  <button type="button" class="btn btn-primary button is-hidden btn-js" data-action="load-more"><span
+      class="spinner is-hidden spinner-grow spinner-grow-sm" role="status" aria-hidden="true"></span>
+    <span class="label">MOAR!!</span></button>
 
 </body>
 
